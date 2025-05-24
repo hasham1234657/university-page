@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Future Vision University</title>
+  <style>
+    body { font-family: Arial, sans-serif; direction: ltr; margin: 0; background-color: #f2f2f2; }
+    header, footer { background-color: #004080; color: white; padding: 20px; text-align: center; }
+    nav { background-color: #003366; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    .tab-buttons { margin-top: 10px; }
+    .tab-buttons button { margin: 5px 10px; padding: 10px 20px; background-color: #004080; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    .tab-buttons button:hover { background-color: #002a5c; }
+    section { padding: 20px; background-color: white; margin: 20px; border-radius: 8px; display: none; }
+    section.active { display: block; }
+    h2 { color: #004080; }
+    iframe { width: 100%; height: 300px; border: none; border-radius: 8px; margin-top: 10px; }
+  </style>
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+    window.onload = () => showSection('home');
+  </script>
+</head>
+<body>
+
+<header>
+  <h1>Future Vision University</h1>
+  <p>Empowering the Future through Innovation and Knowledge</p>
+</header>
+
+<nav>
+  <a href="#home" onclick="showSection('home')">Home</a>
+  <a href="#contact" onclick="showSection('contact')">Contact</a>
+  <a href="#location" onclick="showSection('location')">Location</a>
+  <div class="tab-buttons">
+    <button onclick="showSection('admissions')">Admissions</button>
+    <button onclick="showSection('programs')">Programs</button>
+    <button onclick="showSection('faculty')">Faculty</button>
+  </div>
+</nav>
+
+<section id="home" class="active">
+  <h2>Welcome</h2>
+  <p>Welcome to Future Vision University, your gateway to a brighter tomorrow. We are a modern and forward-thinking institution committed to delivering academic excellence, fostering innovation, and preparing the next generation of leaders, thinkers, and doers.</p>
+  <p>Our campus is home to a vibrant community of learners from across the region, drawn together by a shared passion for discovery and progress. Whether you're interested in technology, science, engineering, or humanities, Future Vision University offers a diverse range of programs tailored to meet the demands of today’s world.</p>
+  <p>We pride ourselves on our experienced faculty, modern facilities, and a student-centered approach to education. From our state-of-the-art computer labs and research centers to our sports and wellness programs, every aspect of campus life is designed to support your growth and success.</p>
+  <p>Join us and be a part of an institution that not only educates but also inspires. At Future Vision University, the future starts with you.</p>
+</section>
+
+<section id="admissions">
+  <h2>Admissions Information</h2>
+  <p>Admissions are open twice a year: Spring Session in December and Fall Session in March. The last date for Spring 2025 admission is 10 December 2025. For Fall 2025, the last date is 10 March 2025.</p>
+  <p>Departments open for admission:</p>
+  <ul>
+    <li>Department of Computer Science</li>
+    <li>Department of Data Science</li>
+    <li>Department of Mathematics</li>
+    <li>Department of Physics</li>
+    <li>Department of Cybersecurity</li>
+    <li>Department of Electrical Engineering</li>
+  </ul>
+  <p>Online applications are accepted through our website. Please check back regularly for updates or contact our admissions office for assistance.</p>
+</section>
+
+<section id="programs">
+  <h2>Academic Programs</h2>
+  <ul>
+    <li>BS Computer Science</li>
+    <li>BS Data Science</li>
+    <li>BS Mathematics</li>
+    <li>BS Physics</li>
+    <li>BS Artificial Intelligence</li>
+    <li>BS Cybersecurity</li>
+    <li>BS Electrical Engineering</li>
+    <li>BS Software Engineering</li>
+  </ul>
+</section>
+
+<section id="faculty">
+  <h2>Faculty</h2>
+  <ul>
+    <li>Dr. Ahmed Khan - Computer Science</li>
+    <li>Dr. Sara Malik - Mathematics</li>
+    <li>Prof. Kamran Raza - Physics</li>
+    <li>Dr. Ayesha Noor - Cybersecurity</li>
+    <li>Engr. Bilal Qureshi - Electrical Engineering</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: <a href="mailto:contentinformation929@gmail.com">contentinformation929@gmail.com</a></p>
+  <p>Phone: 03336103736</p>
+  <p>WhatsApp: <a href="https://wa.me/923336103736" target="_blank">+92 333 6103736</a></p>
+  <p>Facebook: <a href="https://www.facebook.com/profile.php?id=61574898815181&mibextid=rS40aB7S9Ucbxw6v" target="_blank">Visit our Facebook Page</a></p>
+</section>
+
+<section id="location">
+  <h2>Location</h2>
+  <p>Koh-e-Suleman is a famous mountain range in western Pakistan. It stretches from northwestern Balochistan and southwestern Punjab down to the Sindh province.</p>
+  <iframe src="https://www.google.com/maps?q=30.8221,69.8213&output=embed"></iframe>
+</section>
+
+<footer>
+  <p>© 2025 Future Vision University. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
